@@ -14,7 +14,7 @@ function equivalentURL(countryCode) {
 	ul = ul.getElementsByTagName("li");
 	for (i = 0; i < ul.length; ++i) {
 		if (langExp.test(ul[i].getAttribute("class"))) {
-			newLoc = ul[i].childNodes[0].getAttribute("href");
+			newLoc = ul[i].getElementsByTagName("a")[0].getAttribute("href");
 		}
 	}
 	return newLoc;
@@ -156,7 +156,7 @@ mainLink.setAttribute("href", "");
 mainLink.appendChild(document.createTextNode("W"));
 
 /*  Set up links for link box. Each block of text uses the mlLink variable set to a new element. At the end of each block, the element is appended to mlLinksDiv.*/
-function createMenu() {	
+function createMenu() {
 	var mlLinksDiv = document.createElement("div");
 	mlLinksDiv.setAttribute("id", "mlLinksDiv");
 	mlLinksDiv.setAttribute("class", "mlLinksDivHide");
@@ -173,16 +173,16 @@ function createMenu() {
 		mlLinksDiv.appendChild(document.createElement("hr"));
 		
 		/*User Page*/
-		var mlLink = createLink(null, document.getElementById("pt-userpage").childNodes[0].getAttribute("href"));
-		mlLink.appendChild(document.createTextNode(document.getElementById("pt-userpage").childNodes[0].childNodes[0].nodeValue));
+		var mlLink = createLink(null, document.getElementById("pt-userpage").getElementsByTagName("a")[0].getAttribute("href"));
+		mlLink.appendChild(document.createTextNode(document.getElementById("pt-userpage").getElementsByTagName("a")[0].childNodes[0].nodeValue));
 		mlLinksDiv.appendChild(mlLink);
 		
 		
-		mlLinksDiv.appendChild(createLink("Preferences", document.getElementById("pt-preferences").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("Preferences", document.getElementById("pt-preferences").getElementsByTagName("a")[0].getAttribute("href")));
 		
-		mlLinksDiv.appendChild(createLink("Watchlist", document.getElementById("pt-watchlist").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("Watchlist", document.getElementById("pt-watchlist").getElementsByTagName("a")[0].getAttribute("href")));
 		
-		mlLinksDiv.appendChild(createLink("Log Out", document.getElementById("pt-logout").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("Log Out", document.getElementById("pt-logout").getElementsByTagName("a")[0].getAttribute("href")));
 	}	
 	else {
 		mlLinksDiv.appendChild(createLink("Log In", "http://en.wikipedia.org/w/index.php?title=Special:UserLogin"));
@@ -191,27 +191,27 @@ function createMenu() {
 	/* This Article Link */
 	if (document.getElementById("ca-nstab-main")) {
 		mlLinksDiv.appendChild(document.createElement("hr"));
-		mlLinksDiv.appendChild(createLink("This Page", document.getElementById("ca-nstab-main").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("This Page", document.getElementById("ca-nstab-main").getElementsByTagName("a")[0].getAttribute("href")));
 		
 	}
 
 	/*	Edit link, switches between an edit link (if the page can be edited) and a view source link(if the page cannot be edited). Both links will never appear on the same page. If neither appear, it's most likely a special page like Preferences.*/
 	mlLink = document.createElement("a");
 	if (document.getElementById("ca-edit")) {
-		mlLinksDiv.appendChild(createLink("Edit", document.getElementById("ca-edit").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("Edit", document.getElementById("ca-edit").getElementsByTagName("a")[0].getAttribute("href")));
 	}
 	else if (document.getElementById("ca-viewsource")) {
-		mlLinksDiv.appendChild(createLink("View Source", document.getElementById("ca-viewsource").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("View Source", document.getElementById("ca-viewsource").getElementsByTagName("a")[0].getAttribute("href")));
 	}
 
 	/* Talk Link */
 	if (document.getElementById("ca-talk")) {
-		mlLinksDiv.appendChild(createLink("Talk", document.getElementById("ca-talk").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("Talk", document.getElementById("ca-talk").getElementsByTagName("a")[0].getAttribute("href")));
 	}
 
 	/* History Link */
 	if (document.getElementById("ca-history")) {
-		mlLinksDiv.appendChild(createLink("History", document.getElementById("ca-history").childNodes[0].getAttribute("href")));
+		mlLinksDiv.appendChild(createLink("History", document.getElementById("ca-history").getElementsByTagName("a")[0].getAttribute("href")));
 	}
 	
 	return mlLinksDiv;

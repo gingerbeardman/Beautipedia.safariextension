@@ -1,8 +1,8 @@
 The new things in this version include:
 
-[1] Paragraph indenting is turned off by default
-[2] Some tenth anniversary formatting is added
-[3] Video and audio play button looks better
+[1] Changed external link icon
+[2] Tweaked contents list formatting
+[3] Tweaked padding under body headings
 [4] Various bugs are fixed
-	[a] Text descenders no longer hidden
-	[b] and more
+	[a] Menu items now have correct links
+	[b] More robust link generation overall

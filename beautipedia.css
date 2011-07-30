@@ -64,6 +64,10 @@
 		outline: none !important;
 	}
 	
+	#searchButton > img {
+		padding-top: 0.3em !important;
+	}
+	
 	.suggestions-results, .suggestions-special {
 		background-color: white !important;
 	}
@@ -293,7 +297,7 @@
 		font-size: 1.75em !important;
 		display: block !important;
 		margin-top: .25em !important;
-		padding-bottom: 0 !important;
+		padding-bottom: 0.25em !important;
 		font-family: "Garamond", "jGaramond", serif !important;
 	}
 	
@@ -364,6 +368,20 @@
 		background-color: transparent;
 		margin: 5px 0;
 		cursor: pointer;
+	}
+	
+	/* Matt Sephton, http://www.gingerbeardman.com */
+	
+	#toc ul li {
+		padding-bottom: 0.4em !important;
+	}
+
+	#toc .tocnumber:after {
+		content:". ";
+	}
+	
+	div#content a.external, div#content a[href^="gopher://"] {
+		background: url('external-link-ltr-icon.png') center right no-repeat !important;
 	}
 
 }
