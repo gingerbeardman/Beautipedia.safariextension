@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>displayMlLinksDiv</string>
+		<key>Title</key>
+		<string>Display the "W" menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>fixedMenu</string>
+		<key>Title</key>
+		<string>Always show menus</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>textIndent</string>
+		<key>Title</key>
+		<string>Indent New Paragraphs</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>none</string>
+		<key>Key</key>
+		<string>linkColor</string>
+		<key>Title</key>
+		<string>Link Color</string>
+		<key>Titles</key>
+		<array>
+			<string>None</string>
+			<string>Blue</string>
+			<string>Grey</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>none</string>
+			<string>blue</string>
+			<string>grey</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Fast Language Switching</string>
+		<key>Type</key>
+		<string>Separator</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>enableFLS</string>
+		<key>Title</key>
+		<string>Enable Fast Language Switching</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>fr</string>
+		<key>Key</key>
+		<string>otherLang</string>
+		<key>Title</key>
+		<string>Other Language</string>
+		<key>Titles</key>
+		<array>
+			<string>English</string>
+			<string>Deutsch</string>
+			<string>Español</string>
+			<string>Français</string>
+			<string>العربية</string>
+			<string>Български</string>
+			<string>Català</string>
+			<string>Česky</string>
+			<string>Dansk</string>
+			<string>Esperanto</string>
+			<string>한국어</string>
+			<string>Bahasa Indonesia</string>
+			<string>Italiano</string>
+			<string>עברית</string>
+			<string>Lietuvių</string>
+			<string>Magyar</string>
+			<string>Nederlands</string>
+			<string>日本語</string>
+			<string>Norsk (bokmål)</string>
+			<string>Polski</string>
+			<string>Português</string>
+			<string>Русский</string>
+			<string>Română</string>
+			<string>Slovenčina</string>
+			<string>Српски / Srpski</string>
+			<string>Suomi</string>
+			<string>Svenska</string>
+			<string>Türkçe</string>
+			<string>Українська</string>
+			<string>Tiếng Việt</string>
+			<string>Volapük</string>
+			<string>中文</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<string>en</string>
+			<string>de</string>
+			<string>es</string>
+			<string>fr</string>
+			<string>ar</string>
+			<string>bg</string>
+			<string>ca</string>
+			<string>cs</string>
+			<string>da</string>
+			<string>eo</string>
+			<string>ko</string>
+			<string>id</string>
+			<string>it</string>
+			<string>he</string>
+			<string>lt</string>
+			<string>hu</string>
+			<string>nl</string>
+			<string>ja</string>
+			<string>nb</string>
+			<string>pl</string>
+			<string>pt</string>
+			<string>ru</string>
+			<string>ro</string>
+			<string>sk</string>
+			<string>sr</string>
+			<string>fi</string>
+			<string>sv</string>
+			<string>tr</string>
+			<string>uk</string>
+			<string>vi</string>
+			<string>vo</string>
+			<string>zh</string>
+		</array>
+	</dict>
+</array>
+</plist>

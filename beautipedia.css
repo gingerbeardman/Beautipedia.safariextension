@@ -1,0 +1,391 @@
+/*The !important declaration is very important. Without, the author stylesheet would take precedence. It must be declared on anything not created by Beautipedia. For some properties, !important must be used, regardless of the element creator. These are typically properties which were created using a blanket selector (html, body). I have used !important on all properties, just to be safe.*/
+
+@font-face {
+	font-family: "jGaramond";
+	src: local('Garamond'), url('jGaraRegular.ttf') format('truetype');
+}
+
+
+@media screen { /*limits most rules to screen only*/
+/* Hide Dumb Stuff */
+
+	#mw-panel, #mp-sister, #mp-lang, #footer-icons, #p-personal, #left-navigation, #p-views, #p-cactions, #mw-page-base, #articlecount, .editsection, .magnify, #mw-fr-revisiontag, .portlet, .tmbox-notice, .mbox-image, #featured-star, #good-star, #protected-icon {
+		display: none !important;
+	}
+	
+	/* Header (includes search and menu) */
+	
+	#fwpHeaderContainer {
+		top: 0px;
+		width: 100%;
+	}
+	
+	.fwpFixedMenuOn {
+		position: fixed !important;
+	}
+	
+	.fwpFixedMenuOff {
+		position: absolute !important;
+	}
+	
+	#fwpHeader {
+		position: relative;
+		max-width: 1000px;
+		width: 75%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	
+	/* Search */
+	
+	#p-search {
+		position: absolute;
+		right: 0px !important;
+		opacity: .25;
+		-webkit-transition-property: opacity;
+		-webkit-transition-duration: .4s;
+	}
+	
+	#p-search:hover {
+		opacity: 1 !important;
+	}
+	
+	.fwpFocused {
+		opacity: 1 !important;
+	}
+	
+	#simpleSearch {
+		background-image: none !important;
+		-webkit-border-radius: 5px !important;
+	}
+	
+	#searchInput {
+		-webkit-appearance: none !important;
+		outline: none !important;
+	}
+	
+	.suggestions-results, .suggestions-special {
+		background-color: white !important;
+	}
+	
+	/* Main Menu */
+	
+	#mlDiv {
+		/*Menu, position, text | add opposite of width to right (-.88em) | width makes it easier to move mouse from "W" to menu*/
+		top: .8em !important;
+		right: -6.88em !important;
+		width: 6em;
+		font-family: 'jGaramond', 'Garamond', serif !important;
+		opacity: .25 !important;
+		-webkit-transition-property: opacity;
+		-webkit-transition-duration: .4s;
+	}
+	
+	#mlDiv:hover {
+		opacity: 1 !important;
+	}
+	
+	#mainLink {
+		/*Menu, position, text */
+		position: relative;
+		color: #303030 !important;
+		text-decoration: none !important;
+	}
+	
+	#mainLink:hover {
+		/*Menu, removes underline below "W" */
+		text-decoration: none !important;
+	}
+	
+	#mlLinksDiv {
+		/*Menu, sets up main style of div */
+		display: none !important;
+		position: absolute !important;
+		background: white !important;
+		border: 1px solid grey !important;
+		border-radius: 5px !important;
+		max-width: 6.25em !important;
+		white-space: nowrap !important;
+		-webkit-box-shadow: 2px 4px 10px grey !important;
+	}
+	
+	#mlLinksDiv hr {
+		border-color: lightgrey;
+	}
+	
+	#mlDiv:hover .mlLinksDivShow {
+		/*Menu, displays div on hover - class is  dynamically set by javascript*/
+		display: block !important;
+	}
+	
+	.mlLinksDivHide {
+		/*Menu, hides div on hover - class is  dynamically set by javascript*/
+		display: none !important;
+	}
+	
+	#mlLinksDiv a {
+		/*Menu -> Links, sets one link per line (block), text stuff, overflow*/
+		display: block !important;
+		padding: 5px !important;
+		text-decoration: none !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+	}
+	
+	#mlLinksDiv a:hover {
+		/*Menu -> Links, highlights links when hovered*/
+		background: highlight !important;
+	}
+	
+	#mlLinksDiv a:first-child {
+		/*Menu -> Links, prevents top corners of highlight from clipping rounded corners of mlLinksDiv*/
+		border-top-right-radius: 5px !important;
+		border-top-left-radius: 5px !important;
+	}	
+	
+	#mlLinksDiv a:last-child {
+		/*Menu -> Links, prevents bottom corners of highlight from clipping rounded corners of mlLinksDiv*/
+		border-bottom-right-radius: 5px !important;
+		border-bottom-left-radius: 5px !important;
+	}
+	
+	#fwpLangSwitch.off {
+		/*Hides language switch*/
+		display: none !important;
+	}
+	
+	#fwpLangSwitch.on {
+		/*Displays language switch*/
+		display: block !important;
+	}
+	
+	/* Main Page */
+	
+	#mp-upper h2, #mp-bottom h2 {
+		/*Main Page -> Featured Headings*/
+		background: none !important;
+		border: none !important;
+		border-bottom: 1px solid grey !important;
+	}
+	
+	#mp-upper table, #mp-bottom table, .MainPageBG, #mp-bottom {
+		/*Main Page, light grey article background*/
+		background-color: #F1F1F1 !important;
+	}
+	
+	#mp-topbanner {
+		/*Main Page -> Welcome Banner*/
+		background: none !important;
+		border: none !important;
+		font-family: "Garamond", "jGaramond", serif !important;
+	}
+	
+	#mp-topbanner td:nth-child(n+2) {
+		/*Main Page -> Welcome Banner, removes everything but welcome to wikipedia*/
+		display: none !important;
+	}
+	
+	#mp-topbanner td table {
+		/*Main Page -> Welcome Banner, center table*/
+		margin: auto !important;
+		vertical-align: middle;
+	}
+	
+	#mp-banner td {
+		border: 1px dashed grey !important;
+		background: transparent !important;
+	}
+	
+	#mp-banner span {
+		display: block !important;
+		margin: 10px !important;
+		margin-bottom: 0px !important;
+	}
+	
+	/*General Pages*/
+	
+	.MainPageBG {
+		/*General*/
+		//width: 50% !important;
+		border: 1px solid #BEBEBE !important;
+		-webkit-border-radius: 3px !important;
+	}
+	
+	.MainPageBG h2 > span {
+		color: #191919 !important;
+		text-shadow: white 0px 1px 0px;
+	}
+	
+	#mw-head-base, #content, #footer {
+		/*General, Removes strange blue lines */
+		background-image: none !important;
+	}
+	
+	#content, #fwpHeader {
+		/*Page Width, menus aligned to content*/
+		width: 75%;
+		max-width: 60em; //careful of em - see if pixels work better
+	}
+	
+	#content {
+		/*General, white, rounded corner backdrop, shadow*/
+		margin: 3em auto 0 auto !important;
+		padding: 0.5em 2.5em 1.5em 2.5em !important;
+		border: #CACACA solid 1px !important;
+		-webkit-border-radius: 6px !important;
+		-webkit-box-shadow: 0 0 10px #ccc !important;
+	}
+	
+	html {
+		/*General, Basic text adjustments*/
+		text-align: justify !important;
+		font-family: "Helvetica", "Arial", sans-serif !important;
+	}
+	
+	/* Content Display */
+	
+	#footer a {
+		/*Content -> footer, removes blue links in footer*/
+		color: inherit !important;
+	}
+	
+	.fwpColorLinksNone a, #mlDiv a {
+		/*Content, Removes blue coloring if setting is off
+		Absence of .fwpColorLinksOn property sets links to color assigned by author stylesheet*/
+		color: inherit !important;
+		-webkit-transition-property: color, text-shadow;
+		-webkit-transition-duration: .2s, .2s;
+		-webkit-transition-timing-function: ease-out, ease-out;
+	}
+	
+	.fwpColorLinksBlue a {
+		-webkit-transition: color .5s ease;
+	}
+	
+	.fwpColorLinksGrey a {
+		color: #7E7E7E !important;
+		-webkit-transition: color .5s ease;
+	}
+	
+	.fwpColorLinksNone a:hover, .fwpColorLinksBlue a:hover, .fwpColorLinksGrey a:hover {
+		color: #0488E7 !important;
+		text-shadow: 0px 0px 3px #C2DBF1;
+	}
+	
+	p {
+		margin-top: 1em !important;
+	}
+	
+	.fwpIndentOn p {
+		/* Adds text indent if setting on. */
+		text-indent: 1em !important;
+	}
+	
+	#firstHeading {
+		/*Content -> Headlines, Garamond, Larger font*/
+		font-family: "Garamond", "jGaramond", serif !important;
+		font-size: 3em !important;
+		font-weight: normal;
+	}
+		
+	.mw-headline {
+		/*Content -> Headlines, Garamond, different font*/
+		font-size: 1.75em !important;
+		display: block !important;
+		margin-top: .25em !important;
+		padding-bottom: 0 !important;
+		font-family: "Garamond", "jGaramond", serif !important;
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+		text-align: left !important;
+		overflow: visible !important;
+	}
+	
+	h2 .mw-headline {
+		font-weight: 900 !important;
+	}
+	
+	h3 .mw-headline {
+		font-weight: normal !important;
+	}
+	
+	h2 > span, h3 > span {
+		/*Makes multi-line headers act correctly (line-overlap problem)*/
+		line-height: 1;
+		margin-bottom: -.25em;
+	}
+	
+	.thumbinner {
+		/*Content -> Thumbnails, image well*/
+		-webkit-border-radius: 3px !important;
+		-webkit-box-shadow: 0 0 8px #ccc !important;
+	}
+	
+	.thumbcaption {
+		/*Content -> Thumbnails -> Captions, basic settings, hides captions, adds transitions*/
+		text-align: center !important;
+		height: 0 !important;
+		display: none !important;
+		-webkit-transition-property: height;
+		-webkit-transition-duration: 1s;
+	}
+	
+	.thumbinner:hover .thumbcaption {
+		/*Content -> Thumbnails -> Captions, shows captions on hover of thumbnail*/
+		display: block !important;
+		height: auto !important;
+	}
+	
+	.navbox-title, .navbox-abovebelow, .navbox-group, .navbox-subgroup .navbox-title, .navbox-columns-table td {
+		background-color: lightgrey !important;
+	}
+	
+	[class="noprint plainlinks navbar"], [class="noprint plainlinks navbar"] span {
+		background: transparent !important;
+	}
+	
+	blockquote {
+		border-left: 1px dashed lightgrey;
+		font-style: italic;
+		padding: 0 5px;
+	}
+	
+	div[id^=ogg_player] img {
+		display: none;
+	}
+	
+	div[id^=ogg_player] button {
+		background-image: url("circleright22.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 32px;
+		border: 1px solid grey;
+		background-color: transparent;
+		margin: 5px 0;
+		cursor: pointer;
+	}
+
+}
+
+@media print {
+	.infobox, .thumb {
+		page-break-inside: avoid;
+	}
+	
+	#toc, #catlinks, #footer-info-copyright, #footer-places {
+		display: none;
+	}
+	
+	p {
+		text-align: justify;
+	}
+	
+	.fwpIndentOn p {
+		text-indent: 2em;
+	}
+	
+	#p-search {
+		display: none;
+	}
+}

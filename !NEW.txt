@@ -1,0 +1,8 @@
+The new things in this version include:
+
+[1] Paragraph indenting is turned off by default
+[2] Some tenth anniversary formatting is added
+[3] Video and audio play button looks better
+[4] Various bugs are fixed
+	[a] Text descenders no longer hidden
+	[b] and more

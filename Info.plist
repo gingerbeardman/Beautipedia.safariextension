@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>funwithpi</string>
+	<key>CFBundleDisplayName</key>
+	<string>Beautipedia</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.funwithpi.safari.beautipedia</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.3b</string>
+	<key>CFBundleVersion</key>
+	<string>11</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>globalpage.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Blacklist</key>
+		<array>
+			<string>https://secure.wikimedia.org/wikipedia/meta/*</string>
+			<string>https://secure.wikimedia.org/wikipedia/meta/*</string>
+			<string>https://secure.wikimedia.org/wikipedia/species/*</string>
+			<string>https://secure.wikimedia.org/wikipedia/incubator/*</string>
+			<string>http://simple.wikipedia.org/*</string>
+			<string>http://www.wikipedia.org/</string>
+		</array>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>beautipedia.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>beautipedia.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>A cleaner Wikipedia.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.wikipedia.org</string>
+				<string>secure.wikimedia.org/wikipedia</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://davidbenjones.com/safariextensions/updatemanifest.plist</string>
+	<key>Website</key>
+	<string>http://davidbenjones.com/</string>
+</dict>
+</plist>

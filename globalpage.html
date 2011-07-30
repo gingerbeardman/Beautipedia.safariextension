@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>global page</title>
+		<script type="text/javascript">
+			
+			function respondToMessage(event) {
+				if(event.name === "getSettings") {
+					var settings, settingsArray;
+					settingsArray = new Array();
+					settings = safari.extension.settings;
+					settingsArray[0] = settings.displayMlLinksDiv;
+					settingsArray[1] = settings.linkColor;
+					settingsArray[2] = settings.textIndent;
+					settingsArray[3] = settings.enableFLS;
+					settingsArray[4] = settings.otherLang;
+					settingsArray[5] = settings.fixedMenu;
+					event.target.page.dispatchMessage("settings", settingsArray);
+					//secure wikipedia page stops at "event.target.page" with a message of an undefined value
+				}
+			}
+			
+			function settingChanged(event) {
+				if ((event.key == "enableFLS") && (event.newValue == true)) {
+					alert("Beautipedia has only been tested in English. It may not look correct in certain languages. Some languages may not even have a counterpart for the English article.");
+				}
+				for (x = 0; x < safari.application.browserWindows.length; ++x) {
+					for (y = 0; y < safari.application.browserWindows[x].tabs.length; ++y) {
+						var page = safari.application.browserWindows[x].tabs[y].page;
+						if (!page)
+							continue;
+						page.dispatchMessage("change", event);
+					}
+				}
+			}
+			 
+			safari.application.addEventListener("message", respondToMessage, false);
+			safari.extension.settings.addEventListener("change", settingChanged,false);
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
+   

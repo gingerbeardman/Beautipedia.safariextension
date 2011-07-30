@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<dict>
+	<lang name="English" link="http://en.wikipedia.org/" code="en" />
+	<lang name="Deutsch" link="http://de.wikipedia.org/" code="de" />
+	<lang name="Español" link="http://es.wikipedia.org/" code="es" />
+	<lang name="Esperanto" link="http://eo.wikipedia.org/" code="eo" />
+	<lang name="العربية" link="http://ar.wikipedia.org/" code="ar" />
+	<lang name="Български" link="http://bg.wikipedia.org/" code="bg" />
+	<lang name="Català" link="http://ca.wikipedia.org/" code="ca" />
+	<lang name="Česky" link="http://cs.wikipedia.org/" code="cs" />
+	<lang name="Dansk" link="http://da.wikipedia.org/" code="da" />
+	<lang name="Français" link="http://fr.wikipedia.org/" code="fr" />
+	<lang name="한국어" link="http://ko.wikipedia.org/" code="ko" />
+	<lang name="Bahasa Indonesia" link="http://id.wikipedia.org/" code="id" />
+	<lang name="Italiano" link="http://it.wikipedia.org/" code="it" />
+	<lang name="עברית" link="http://he.wikipedia.org/" code="he" />
+	<lang name="Lietuvių" link="http://lt.wikipedia.org/" code="lt" />
+	<lang name="Magyar" link="http://hu.wikipedia.org/" code="hu" />
+	<lang name="Nederlands" link="http://nl.wikipedia.org/" code="nl" />
+	<lang name="日本語" link="http://ja.wikipedia.org/" code="ja" />
+	<lang name="Norsk (bokmål)" link="http://no.wikipedia.org/" code="nb" />
+	<lang name="Polski" link="http://pl.wikipedia.org/" code="pl" />
+	<lang name="Português" link="http://pt.wikipedia.org/" code="pt" />
+	<lang name="Русский" link="http://ru.wikipedia.org/" code="ru" />
+	<lang name="Română" link="http://ro.wikipedia.org/" code="ro" />
+	<lang name="Slovenčina" link="http://sk.wikipedia.org/" code="sk" />
+	<lang name="Српски / Srpski" link="http://sr.wikipedia.org/" code="sr" />
+	<lang name="Suomi" link="http://fi.wikipedia.org/" code="fi" />
+	<lang name="Svenska" link="http://sv.wikipedia.org/" code="sv" />
+	<lang name="Türkçe" link="http://tr.wikipedia.org/" code="tr" />
+	<lang name="Українська" link="http://uk.wikipedia.org/" code="uk" />
+	<lang name="Tiếng Việt" link="http://vi.wikipedia.org/" code="vi" />
+	<lang name="Volapük" link="http://vo.wikipedia.org/" code="vo" />
+	<lang name="中文" link="http://zh.wikipedia.org/" code="zh" />
+</dict>
