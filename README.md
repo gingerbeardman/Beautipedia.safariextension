@@ -11,7 +11,7 @@ David was kind enough to open source the code so it can be improved by the commu
 
 ## Changelog
 
-**2011-30-07, version 4.4b**  
+**2011-07-30, version 4.4b**  
 Menu items now have correct links  
 More robust link generation throughout  
 Changed external link icon  
