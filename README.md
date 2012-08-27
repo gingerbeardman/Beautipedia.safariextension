@@ -11,7 +11,7 @@ It was created by David Ben Jones, who was kind enough to open source the code s
 
 David's website is no longer active, so I have taken over hosting the extension. 
 
-Sadly there was no way to transition existing users of the plugin.
+Sadly there was no way to transition existing users of the plugin. Please install this new version manually.
 
 ## Changelog
 
