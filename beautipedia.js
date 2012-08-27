@@ -195,6 +195,14 @@ function createMenu() {
 		
 	}
 
+	/* Watch/Unwatch Link */
+	if (document.getElementById("ca-watch")) {
+		mlLinksDiv.appendChild(createLink("Watch", document.getElementById("ca-watch").getElementsByTagName("a")[0].getAttribute("href")));
+	}
+	else if (document.getElementById("ca-unwatch")) {
+		mlLinksDiv.appendChild(createLink("Unwatch", document.getElementById("ca-unwatch").getElementsByTagName("a")[0].getAttribute("href")));
+	}
+
 	/*	Edit link, switches between an edit link (if the page can be edited) and a view source link(if the page cannot be edited). Both links will never appear on the same page. If neither appear, it's most likely a special page like Preferences.*/
 	mlLink = document.createElement("a");
 	if (document.getElementById("ca-edit")) {
