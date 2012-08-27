@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>funwithpi &amp; others</string>
 	<key>Builder Version</key>
-	<string>7534.48.3</string>
+	<string>8536.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>Beautipedia</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.4b</string>
+	<string>4.5</string>
 	<key>CFBundleVersion</key>
-	<string>11</string>
+	<string>12</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -64,7 +64,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://davidbenjones.com/safariextensions/updatemanifest.plist</string>
+	<string>http://www.gingerbeardman.com/safari/update.xml</string>
 	<key>Website</key>
 	<string>http://github.com/gingerbeardman/Beautipedia.safariextension</string>
 </dict>
