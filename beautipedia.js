@@ -185,7 +185,7 @@ function createMenu() {
 		mlLinksDiv.appendChild(createLink("Log Out", document.getElementById("pt-logout").getElementsByTagName("a")[0].getAttribute("href")));
 	}	
 	else {
-		mlLinksDiv.appendChild(createLink("Log In", "http://en.wikipedia.org/w/index.php?title=Special:UserLogin"));
+		mlLinksDiv.appendChild(createLink("Log In", "http://www.wikipedia.org/w/index.php?title=Special:UserLogin"));
 	}
 
 	/* This Article Link */

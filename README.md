@@ -15,6 +15,9 @@ Sadly there was no way to transition existing users of the plugin. Please instal
 
 ## Changelog
 
+**2013-01-25, version 4.5.1**  
+Corrected login link (was English, now general)  
+
 **2012-08-27, version 4.5**  
 Added new Watch/Unwatch link  
 
