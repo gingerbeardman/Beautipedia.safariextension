@@ -68,8 +68,53 @@
 		padding-top: 0.3em !important;
 	}
 	
+	div#simpleSearch button#searchButton img {
+		margin-top: -5px !important;
+	}
+	
 	.suggestions-results, .suggestions-special {
 		background-color: white !important;
+	}
+	
+	a#notLoggedIn {
+		text-decoration: none;
+		font-family: 'jGaramond', 'Garamond', serif !important;
+		color: #303030 !important;
+		opacity: .25 !important;
+		position: absolute;
+		left: -2.5em;
+		top: 0.75em;
+	}
+
+	a#notLoggedIn:hover {
+		text-decoration: underline;
+		opacity: 1 !important;
+	}
+
+	.mw-editsection {
+		margin-top: -1.5em !important;
+		visibility: hidden;
+		float: right !important;
+	}
+	
+	.mw-editsection a {
+		opacity: .2 !important;
+		visibility: visible;
+	}
+	
+	.subtleEditIcons {
+		float: left !important;
+		margin-left: -2.75em !important;
+	}
+	
+	.subtleEditIcons a {
+		opacity: .12 !important;
+		background: transparent url('edit.png') right center no-repeat !important;
+		padding-right: 1.5em;
+	}
+	
+	.mw-editsection a:hover {
+		opacity: 1 !important;
 	}
 	
 	/* Main Menu */

@@ -79,20 +79,20 @@ function changeFixedMenu(on) {
 }
 
 function retrieveMessage(event) {
-	console.log("message retrieved");
+	console.log("message retrieved: " + event.name);
 	if (event.name === "settings") {
-		/*Settings | 0 = displayMlLinksDiv | 1 = linkColor | 2 = textIndent | 3 = enableFLS | 4 = otherLang | 5 = fixedMenu*/
+		/* Settings
+			0 = displayMlLinksDiv | 1 = linkColor | 2 = textIndent | 3 = enableFLS | 4 = otherLang | 5 = fixedMenu
+		*/
 		changeDisplayMlLinksDiv(event.message[0]);
 		
 		changeColorLinks(event.message[1]);
 		
 		changeIndent(event.message[2]);
-			
+
 		//Language stuff
-		
-		changeOtherLang(event.message[4]);
-		
 		changeEnableFLS(event.message[3]);
+		changeOtherLang(event.message[4]);
 		changeFixedMenu(event.message[5]);
 	}
 	if (event.name === "change") {
@@ -150,11 +150,6 @@ var mainLink, mlDiv, linkHref;
 mainLink = createLink("W", "http://www.wikipedia.org/wiki/Main_Page", null, "mainLink");
 mlDiv = document.createElement("div");
 
-/* Set up the "W" /
-mainLink.setAttribute("id", "mainLink");
-mainLink.setAttribute("href", "");
-mainLink.appendChild(document.createTextNode("W"));
-
 /*  Set up links for link box. Each block of text uses the mlLink variable set to a new element. At the end of each block, the element is appended to mlLinksDiv.*/
 function createMenu() {
 	var mlLinksDiv = document.createElement("div");
@@ -183,7 +178,7 @@ function createMenu() {
 		mlLinksDiv.appendChild(createLink("Watchlist", document.getElementById("pt-watchlist").getElementsByTagName("a")[0].getAttribute("href")));
 		
 		mlLinksDiv.appendChild(createLink("Log Out", document.getElementById("pt-logout").getElementsByTagName("a")[0].getAttribute("href")));
-	}	
+	}
 	else {
 		mlLinksDiv.appendChild(createLink("Log In", "http://www.wikipedia.org/w/index.php?title=Special:UserLogin"));
 	}
@@ -246,6 +241,23 @@ hcontainer.appendChild(h);
 
 document.body.appendChild(hcontainer);
 
+/* Add indication that user is not logged in */
+if (!document.getElementById("pt-userpage")) {
+	before = document.getElementById("fwpHeader");
+	before.insertBefore(createLink("Log In", "http://www.wikipedia.org/w/index.php?title=Special:UserLogin", "noprint", "notLoggedIn"), before.firstChild);
+}
+
+/* change edit links to icon */
+var bold = document.getElementsByClassName("mw-editsection");
+for( var i = 0; i < bold.length; ++i ) {
+	bold[i].className = bold[i].className +" subtleEditIcons";
+
+	anchors = bold[i].getElementsByTagName("a");
+	for( var a = 0; a < anchors.length; ++a ) {
+		anchors = anchors[a].innerHTML = '';
+	}
+}
+
 /*Fix search menu blurring*/
 var searchInput = document.getElementById('searchInput');
 	searchInput.setAttribute("onfocus", "document.getElementById('p-search').setAttribute('class', document.getElementById('p-search').getAttribute('class').replace(/fwpFocused|fwpUnfocused/, 'fwpFocused'));");
@@ -279,19 +291,13 @@ var footer, fwpfooter, fwplink, fwplink2, text;
 footer = document.getElementById("footer-info");
 if (footer) {
 	fwplink = document.createElement("a");
-	fwplink.setAttribute("href","http://www.davidbenjones.com/beautipedia/");
-	fwplink.appendChild(document.createTextNode("website"));
-	
-	fwplink2 = document.createElement("a");
-	fwplink2.setAttribute("href","http://www.davidbenjones.com/beautipedia/feedback.php");
-	fwplink2.appendChild(document.createTextNode("feedback page"));
+	fwplink.setAttribute("href","https://github.com/gingerbeardman/Beautipedia.safariextension");
+	fwplink.appendChild(document.createTextNode("the Beautipedia page on GitHub"));
 	
 	fwpfooter = document.createElement("li");
 	
-	fwpfooter.appendChild(document.createTextNode("Beautipedia was made by David Ben Jones. More info can be found on his "));
+	fwpfooter.appendChild(document.createTextNode("Beautipedia was originally created by David Ben Jones, but it is now Open Source. To request a feature or report a bug, visit "));
 	fwpfooter.appendChild(fwplink);
-	fwpfooter.appendChild(document.createTextNode(". To request a feature or report a bug, visit Beautipedia's "));
-	fwpfooter.appendChild(fwplink2);
 	fwpfooter.appendChild(document.createTextNode("."));
 	
 	footer.insertBefore(fwpfooter, footer.childNodes[2]);
