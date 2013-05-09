@@ -18,6 +18,10 @@ Sadly there was no way to transition existing users of the plugin. Please instal
 
 ## Changelog
 
+**2013-05-09, version 4.6.0**  
+Extra, more visible "Log In" link  
+Edit links are now more subtle icons  
+
 **2013-01-25, version 4.5.1**  
 Corrected login link (was English, now general)  
 
