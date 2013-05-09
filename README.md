@@ -5,6 +5,9 @@ Beautipedia.safariextension
 
 Beautipedia is a Safari Extension that gives Wikipedia a cleaner, tidier, more design focussed look and feel.
 
+##Download
+http://www.gingerbeardman.com/safari/Beautipedia.safariextz
+
 ## Credits
 
 It was created by David Ben Jones, who was kind enough to open source the code so it can be improved by the community.
