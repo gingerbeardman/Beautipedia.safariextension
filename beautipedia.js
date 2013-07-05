@@ -202,6 +202,9 @@ function createMenu() {
 	mlLink = document.createElement("a");
 	if (document.getElementById("ca-edit")) {
 		mlLinksDiv.appendChild(createLink("Edit", document.getElementById("ca-edit").getElementsByTagName("a")[0].getAttribute("href")));
+		if (document.getElementById("ca-editsource")) {
+			mlLinksDiv.appendChild(createLink("Edit Source", document.getElementById("ca-editsource").getElementsByTagName("a")[0].getAttribute("href")));
+		}
 	}
 	else if (document.getElementById("ca-viewsource")) {
 		mlLinksDiv.appendChild(createLink("View Source", document.getElementById("ca-viewsource").getElementsByTagName("a")[0].getAttribute("href")));

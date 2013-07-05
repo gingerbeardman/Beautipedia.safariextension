@@ -16,8 +16,9 @@ Sadly there was no way to transition existing users of the plugin. Please instal
 
 ## Changelog
 
-**2013-07-05, version 4.6.1**  
+**2013-07-05, version 4.6.2**  
 Added layout tweak for the Visual Editor  
+Added Edit Source link in addition to Edit link  
 
 **2013-05-09, version 4.6.0**  
 Extra, more visible "Log In" link  
