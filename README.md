@@ -10,11 +10,9 @@ Beautipedia is a Safari Extension that gives Wikipedia a cleaner, tidier, more d
 
 ## Credits
 
-It was created by David Ben Jones, who was kind enough to open source the code so it can be improved by the community.
+It was created by David Ben Jones, who was kind enough to open source the code so it can be improved by the community. David's website is no longer active, so I have taken over hosting the extension. 
 
-David's website is no longer active, so I have taken over hosting the extension. 
-
-Sadly there was no way to transition existing users of the plugin. Please install this new version manually.
+Sadly there was no way to transition existing users of the plugin. Please install this new version manually. From that point on it will auto-update.
 
 ## Changelog
 
