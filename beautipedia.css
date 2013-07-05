@@ -9,7 +9,7 @@
 @media screen { /*limits most rules to screen only*/
 /* Visual Editor */
 	.ve-ui-toolbar {
-		margin-top: 0 !important;
+		margin-top: -6px !important;
 	}
 
 /* Hide Dumb Stuff */
