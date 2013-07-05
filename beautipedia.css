@@ -7,6 +7,11 @@
 
 
 @media screen { /*limits most rules to screen only*/
+/* Visual Editor */
+	.ve-ui-toolbar {
+		margin-top: 0 !important;
+	}
+
 /* Hide Dumb Stuff */
 
 	#mw-panel, #mp-sister, #mp-lang, #footer-icons, #p-personal, #left-navigation, #p-views, #p-cactions, #mw-page-base, #articlecount, .editsection, .magnify, #mw-fr-revisiontag, .portlet, .tmbox-notice, .mbox-image, #featured-star, #good-star, #protected-icon {
