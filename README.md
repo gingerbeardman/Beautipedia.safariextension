@@ -16,6 +16,9 @@ Sadly there was no way to transition existing users of the plugin. Please instal
 
 ## Changelog
 
+**2013-08-22, version 4.6.3**  
+Visual Editor beta edit links are now hidden  
+
 **2013-07-05, version 4.6.2**  
 Added layout tweak for the Visual Editor  
 Added Edit Source link in addition to Edit link  
